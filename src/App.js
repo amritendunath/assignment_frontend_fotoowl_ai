@@ -1,22 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-<<<<<<< HEAD
 
 // Bypass Ngrok browser warning
 axios.defaults.headers.common['ngrok-skip-browser-warning'] = 'true';
 
-=======
->>>>>>> 7bc91f41f6ad0a5258e4a7a98ec93b7b9642ffd6
 import Layout from './components/Layout';
 import ImageImporter from './components/ImageImporter';
 import ImageGallery from './components/ImageGallery';
 import './styles/main.css';
 
-<<<<<<< HEAD
 const API_URL = process.env.REACT_APP_API_URL
-=======
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
->>>>>>> 7bc91f41f6ad0a5258e4a7a98ec93b7b9642ffd6
 
 function App() {
   const [folderUrl, setFolderUrl] = useState('');
