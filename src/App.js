@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// Bypass Ngrok browser warning
-axios.defaults.headers.common['ngrok-skip-browser-warning'] = 'true';
-
 import Layout from './components/Layout';
 import ImageImporter from './components/ImageImporter';
 import ImageGallery from './components/ImageGallery';
 import './styles/main.css';
+
+// Bypass Ngrok browser warning
+axios.defaults.headers.common['ngrok-skip-browser-warning'] = 'true';
 
 const API_URL = process.env.REACT_APP_API_URL
 
